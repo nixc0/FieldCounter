@@ -7,8 +7,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    int scoreHomeTeam = 0;
-    int scoreAwayTeam = 0;
+    int scoreHomeTeam, scoreAwayTeam;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -104,8 +103,8 @@ public class MainActivity extends AppCompatActivity {
      * Resets the score for home and away team.
      */
     public void resetButton(View V){
-        int scoreHomeTeam = 0;
-        int scoreAwayTeam = 0;
+        scoreHomeTeam = 0;
+        scoreAwayTeam = 0;
         displayForHome(scoreHomeTeam);
         displayForAway(scoreAwayTeam);
 
